@@ -1,12 +1,11 @@
 
-````markdown
-# FastAPI Quiz Generator from YouTube Videos
+FastAPI Quiz Generator from YouTube Videos
 
-This project is a FastAPI application that takes a YouTube video URL, extracts the audio, transcribes it using **Whisper**, and generates quiz questions using **OpenAI GPT**.
+This project is a FastAPI application that takes a YouTube video URL, extracts the audio, transcribes it using **Whisper**, and generates quiz questions using OpenAI GPT.
 
 ---
 
-## Features
+Features
 
 - Download audio from YouTube videos.
 - Transcribe audio to text with OpenAI Whisper.
@@ -15,7 +14,7 @@ This project is a FastAPI application that takes a YouTube video URL, extracts t
 
 ---
 
-## Tech Stack
+Tech Stack
 
 - **FastAPI** – API framework
 - **Whisper** – Audio transcription
@@ -25,7 +24,7 @@ This project is a FastAPI application that takes a YouTube video URL, extracts t
 
 ---
 
-## Installation
+Installation
 
 1. Clone the repository:
 
@@ -48,7 +47,7 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 ---
 
-## Usage
+Usage
 
 Start the FastAPI server:
 
@@ -56,21 +55,21 @@ Start the FastAPI server:
 uvicorn main:app --reload
 ```
 
-### Endpoint
+Endpoint
 
-**POST** `/transcribe-file`
+POST `/transcribe-file`
 
-**Form Parameters:**
+Form Parameters:
 
 * `url` – URL of the YouTube video to process
 
-**Example with `curl`:**
+Example with `curl`:
 
 ```bash
 curl -X POST "http://127.0.0.1:8000/transcribe-file" -F "url=https://www.youtube.com/watch?v=example"
 ```
 
-**Response:**
+Response:
 
 ```json
 [
@@ -85,7 +84,7 @@ curl -X POST "http://127.0.0.1:8000/transcribe-file" -F "url=https://www.youtube
 
 ---
 
-## Project Structure
+Project Structure
 
 ```
 .
