@@ -29,8 +29,8 @@ Installation
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone git@github.com:AliDamn/QuizGenerator.git
+cd AiAgent
 ````
 
 2. Install dependencies:
